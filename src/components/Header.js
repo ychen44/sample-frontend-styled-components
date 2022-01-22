@@ -1,4 +1,4 @@
-import { StyledHeader, Nav, Logo } from "./styles/Header.styled";
+import { StyledHeader, Nav, Logo, Image } from "./styles/Header.styled";
 // <StyledHeader bg="#c8a8f0">
 import { Container } from "./styles/Container.styled";
 import { Button } from "./styles/Button.styled";
@@ -11,8 +11,22 @@ export default function Header() {
           <Logo src="./images/logo.svg" alt="" />
           <Button>Try it Free</Button>
         </Nav>
-        {/* <h1>Hubble</h1>
-        <h3>amber's test site</h3> */}
+
+        <Flex>
+          <div>
+            <h1>Build The Community Your Fans Will Love </h1>
+            <p>
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+
+            <Button bg="#ff0099" color="#fff">
+              Get Started For Free
+            </Button>
+          </div>
+          <Image src="./images/illustration-mockups.svg" alt="" />
+        </Flex>
       </Container>
     </StyledHeader>
   );
